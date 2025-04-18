@@ -21,6 +21,7 @@ for fruit in fruits:
     print("Fruit:", fruit)
 # Output: apple, banana, cherry
 
+
 # -----------------------------
 # Example 3: Loop with range + list index
 # -----------------------------
@@ -42,6 +43,6 @@ for char in word:
 # Example 5: Loop with range and index on string
 # -----------------------------
 print("\nExample 5: Loop with range and index on string")
-for i in range(len(word)):
-    print("Index", i, ":", word[i])
+for index in range(len(word)):
+    print("Index", index, ":", word[index])
 # Output: shows index + letter
