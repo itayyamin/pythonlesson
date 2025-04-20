@@ -12,7 +12,7 @@ class Teacher:
 
     # Method to represent the object as a string
     def __repr__(self):
-        return f"Teacher({self.name}, {self.salary}, {self.subject})"  # <-- Complete string formatting
+        return f""  # <-- Complete string formatting
 
     # Method to compare two Teacher objects based on name and salary
     def __eq__(self, other):
@@ -49,8 +49,8 @@ if __name__ == "__main__":
     # Get a full description of teacher2
     print(f"Full description of teacher2: {teacher2.full_description()}")
 
-# Teacher(John Doe, 4000, Mathematics)
-# Teacher(Jane Smith, 4500, Physics)
+# Teacher(name='John Doe', salary='4000', subject='Mathematics')
+# Teacher(name='Jane Smith', salary='4500', subject='Physics')
 # Are teacher1 and teacher3 the same? True
 # John Doe's yearly salary (with bonus): 49000
 # Full description of teacher2: Jane Smith teaches Physics and earns a salary of 4500
