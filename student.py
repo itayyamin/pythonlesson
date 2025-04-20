@@ -19,5 +19,5 @@ class Student:
 # 2. Create a Student object named "Emma" and add the grades 80, 90, 100
 # 3. Print Emma's average grade
 
-student = Student("Emma", 20)
+student = Student("Emma",20)
 

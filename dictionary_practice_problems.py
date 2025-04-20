@@ -83,8 +83,16 @@ def most_frequent_word(sentence):
         else:
             count[word] = 1
 
-    max_word = max(count, key=count.get)
-    return (max_word, count[max_word])
+    max_word = ""
+    max_number = -1
+
+    for word in words:
+        if count[word] > max_number:
+            max_number = count[word]
+            max_word = word
+
+    # max_word = max(count, key=count.get)
+    return max_word, max_number
 
 if __name__ == "__main__":
 
