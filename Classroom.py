@@ -9,7 +9,7 @@ def record_score(scores, student_name, score):
         student_name (str): The name of the student.
         score (int): The score the student received (0 to 10).
     """
-    scores[student_name] = score
+
 
 
 # This function calculates the average score of the class and identifies
@@ -24,11 +24,7 @@ def calculate_statistics(scores):
     Returns:
         tuple: (average_score (float), top_student_name (str))
     """
-    total = sum(scores.values())
-    avg = total / len(scores)
 
-    top_student = max(scores, key=scores.get)
-    return avg, top_student
 
 
 # This function prints the entire quiz report:
@@ -41,13 +37,7 @@ def print_quiz_report(scores):
     Args:
         scores (dict): A dictionary of student scores.
     """
-    print("📊 Quiz Scores:")
-    for student, score in scores.items():
-        print(f"{student}: {score}")
 
-    avg, top_student = calculate_statistics(scores)
-    print(f"\nClass average: {avg:.2f}")
-    print(f"🏆 Top scorer: {top_student}")
 
 
 # The main function handles user input and drives the program.
@@ -56,16 +46,7 @@ def main():
     Main program loop that allows the teacher to input scores
     for multiple students and then displays the quiz report.
     """
-    scores = {}
 
-    n = int(input("How many students? "))
-    for _ in range(n):
-        name = input("Student name: ")
-        score = int(input("Score (0-10): "))
-        record_score(scores, name, score)
-
-    print()
-    print_quiz_report(scores)
 
 
 # Entry point of the script
