@@ -21,3 +21,4 @@ class Student:
 
 student = Student("Emma",20)
 
+x = f"{student.name} is {student.age} years old"
